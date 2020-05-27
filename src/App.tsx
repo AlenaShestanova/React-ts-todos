@@ -14,12 +14,23 @@ import {ITodo} from './intefaces'
          }
          setTodos(prev=>[newTodo,...todos])
      }
+     const toggleHandler=(id:number)=>{
+         setTodos(prev=>prev.map(todo=>{
+             if(todo.id===id){
+                 todo.completed=!todo.completed
+             }
+             return todo
+         }))
+     }
+     const removeHandler=(id:number)=>{
+         setTodos(prev=>prev.filter(todo=>todo.id!==id))
+     }
   return (
       <>
 <CenteredTabs/>
 <div className="container">
 <TodoForm onAdd={addHandler}></TodoForm>
-    <TodoList todos={todos}></TodoList>
+    <TodoList  todos={todos} onToggle={toggleHandler} onRemove={removeHandler}></TodoList>
 </div>
       </>
   );

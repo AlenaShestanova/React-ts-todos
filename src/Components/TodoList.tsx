@@ -11,35 +11,42 @@ import DeleteIcon from '@material-ui/icons/Delete';
 import {ITodo} from '../intefaces'
 
 
-interface TodoListProps {
+ interface TodoListProps {
 
-    todos: ITodo[]
+    todos: ITodo[],
+    onToggle(id:number):void,
+    onRemove(id:number):void
+
 }
 
 export const TodoList: React.FC<TodoListProps> = (props) => {
 
     const [checked, setChecked] = React.useState([0]);
 
-    const handleToggle = (value: number) => () => {
-        const currentIndex = checked.indexOf(value);
-        const newChecked = [...checked];
-
-        if (currentIndex === -1) {
-            newChecked.push(value);
-        } else {
-            newChecked.splice(currentIndex, 1);
-        }
-
-        setChecked(newChecked);
-    };
+    // const handleToggle = (value: number) => () => {
+    //     const currentIndex = checked.indexOf(value);
+    //     const newChecked = [...checked];
+    //
+    //     if (currentIndex === -1) {
+    //         newChecked.push(value);
+    //     } else {
+    //         newChecked.splice(currentIndex, 1);
+    //     }
+    //
+    //     setChecked(newChecked);
+    // };
 
     return (
         <List className='listCenter'>
-            {props.todos.map((value,index) => {
+            {props.todos.map((value, index) => {
                 const labelId = `checkbox-list-label-${value.id}`;
-
+                let addClassName;
+                if (value.completed) {
+                    addClassName = 'line'
+                }
                 return (
-                    <ListItem key={value.id} role={undefined} dense button onClick={handleToggle(index)}>
+                    <ListItem className={addClassName} key={value.id} role={undefined} dense button
+                             >
                         <ListItemIcon>
                             <Checkbox
                                 edge="start"
@@ -47,12 +54,13 @@ export const TodoList: React.FC<TodoListProps> = (props) => {
                                 tabIndex={-1}
                                 disableRipple
                                 inputProps={{'aria-labelledby': labelId}}
+                                onChange={props.onToggle.bind(null,value.id)}
                             />
                         </ListItemIcon>
                         <ListItemText id={labelId} primary={value.title}/>
                         <ListItemSecondaryAction>
                             <IconButton edge="end" aria-label="comments">
-                                <DeleteIcon/>
+                                <DeleteIcon onClick={()=>props.onRemove(value.id)}/>
                             </IconButton>
                         </ListItemSecondaryAction>
                     </ListItem>
