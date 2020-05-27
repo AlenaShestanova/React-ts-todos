@@ -1,6 +1,6 @@
 import React,{useState} from 'react';
 import CenteredTabs from "./Components/Header";
-import BasicTextFields from "./Components/TodoForm";
+import {TodoForm} from "./Components/TodoForm";
 
  const App:React.FunctionComponent=()=> {
 
@@ -8,7 +8,7 @@ import BasicTextFields from "./Components/TodoForm";
       <>
 <CenteredTabs/>
 <div className="container">
-<BasicTextFields/>
+<TodoForm></TodoForm>
 </div>
       </>
   );
