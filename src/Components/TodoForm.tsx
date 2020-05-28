@@ -3,10 +3,10 @@ import { createStyles, makeStyles, Theme } from '@material-ui/core/styles';
 import TextField from '@material-ui/core/TextField';
 
 
-interface todoFormProps{
+interface TodoFormProps{
     onAdd(title:string):void
 }
-export const TodoForm:React.FC<todoFormProps>=(props)=> {
+export const TodoForm=(props:TodoFormProps)=> {
 const [title,setTitle]=React.useState<string>('')
 const changeHandler=(e:string)=>{
     setTitle(e)

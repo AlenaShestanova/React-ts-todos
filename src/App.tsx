@@ -4,7 +4,7 @@ import {BrowserRouter, Switch, Route} from 'react-router-dom'
 import {TodoPage} from "./pages/TodoPage";
 import {AboutPage} from "./pages/AboutPage";
 
-const App: React.FunctionComponent = () => {
+const App = () => {
 
     return (
         <>

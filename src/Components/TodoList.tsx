@@ -19,7 +19,7 @@ import {ITodo} from '../intefaces'
 
 }
 
-export const TodoList: React.FC<TodoListProps> = (props) => {
+export const TodoList= (props:TodoListProps) => {
 
     const [checked, setChecked] = React.useState([0]);
 

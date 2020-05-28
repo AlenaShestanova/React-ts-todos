@@ -2,7 +2,7 @@ import React, {useEffect} from 'react'
 import {TodoForm} from "../Components/TodoForm";
 import {TodoList} from "../Components/TodoList";
 import {ITodo} from "../intefaces";
-export const TodoPage:React.FC=()=>{
+export const TodoPage=()=>{
     const[todos,setTodos]=React.useState<ITodo[]>([])
     useEffect(()=>{
         const saved=JSON.parse(localStorage.getItem('todos')||'[]') as ITodo[]

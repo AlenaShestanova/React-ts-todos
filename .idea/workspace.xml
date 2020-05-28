@@ -1,19 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="903894e7-3fad-4dd2-9b8c-a60ad82a9100" name="Default Changelist" comment="создала шапку и форму">
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Components/Header.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Components/TodoForm.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/AboutPage.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/TodoPage.tsx" afterDir="false" />
+    <list default="true" id="903894e7-3fad-4dd2-9b8c-a60ad82a9100" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/react_typescript.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/TodoForm.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/TodoForm.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Components/TodoList.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/TodoList.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/AboutPage.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/AboutPage.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/TodoPage.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/TodoPage.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -70,7 +69,7 @@
       <option name="presentableId" value="Default" />
       <updated>1590513489346</updated>
       <workItem from="1590513493423" duration="2249000" />
-      <workItem from="1590589635059" duration="28594000" />
+      <workItem from="1590589635059" duration="30235000" />
     </task>
     <task id="LOCAL-00001" summary="создала шапку и форму">
       <created>1590595699921</created>
@@ -100,7 +99,14 @@
       <option name="project" value="LOCAL" />
       <updated>1590616872025</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="добавила роутер">
+      <created>1590697387636</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1590697387637</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -122,13 +128,14 @@
     <MESSAGE value="обработка ввода при нажатии на enter" />
     <MESSAGE value="добавление туду" />
     <MESSAGE value="выделение и удаление выполненных туду" />
-    <option name="LAST_COMMIT_MESSAGE" value="выделение и удаление выполненных туду" />
+    <MESSAGE value="добавила роутер" />
+    <option name="LAST_COMMIT_MESSAGE" value="добавила роутер" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="438" y="32" key="CommitChangelistDialog2" timestamp="1590616864264">
+    <state x="438" y="32" key="CommitChangelistDialog2" timestamp="1590697379753">
       <screen x="0" y="0" width="1600" height="870" />
     </state>
-    <state x="438" y="32" key="CommitChangelistDialog2/0.0.1600.870@0.0.1600.870" timestamp="1590616864264" />
+    <state x="438" y="32" key="CommitChangelistDialog2/0.0.1600.870@0.0.1600.870" timestamp="1590697379753" />
     <state x="580" y="192" key="FileChooserDialogImpl" timestamp="1590661762244">
       <screen x="0" y="0" width="1600" height="870" />
     </state>
@@ -149,6 +156,10 @@
       <screen x="0" y="0" width="1600" height="870" />
     </state>
     <state width="1578" height="212" key="GridCell.Tab.0.right/0.0.1600.870@0.0.1600.870" timestamp="1590595663039" />
+    <state x="392" y="170" key="Vcs.Push.Dialog.v2" timestamp="1590697669185">
+      <screen x="0" y="0" width="1600" height="870" />
+    </state>
+    <state x="392" y="170" key="Vcs.Push.Dialog.v2/0.0.1600.870@0.0.1600.870" timestamp="1590697669169" />
     <state x="463" y="182" width="672" height="678" key="search.everywhere.popup" timestamp="1590597797992">
       <screen x="0" y="0" width="1600" height="870" />
     </state>
