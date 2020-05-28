@@ -44,7 +44,7 @@ if(props.todos.length===0){
                                 tabIndex={-1}
                                 disableRipple
                                 inputProps={{'aria-labelledby': labelId}}
-                                onChange={props.onToggle.bind(null,value.id)}
+                                onChange={()=>props.onToggle(value.id)}
                             />
                         </ListItemIcon>
                         <ListItemText   className={addClassName} id={labelId} primary={value.title}/>
