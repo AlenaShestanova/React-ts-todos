@@ -35,8 +35,11 @@ export const TodoList: React.FC<TodoListProps> = (props) => {
     //
     //     setChecked(newChecked);
     // };
-
+if(props.todos.length===0){
+    return <p className='pCenter'>Пока дел нет</p>
+}
     return (
+
         <List className='listCenter'>
             {props.todos.map((value, index) => {
                 const labelId = `checkbox-list-label-${value.id}`;
@@ -45,9 +48,9 @@ export const TodoList: React.FC<TodoListProps> = (props) => {
                     addClassName = 'line'
                 }
                 return (
-                    <ListItem className={addClassName} key={value.id} role={undefined} dense button
+                    <ListItem  key={value.id} role={undefined} dense button
                              >
-                        <ListItemIcon>
+                        <ListItemIcon >
                             <Checkbox
                                 edge="start"
                                 checked={value.completed}
@@ -57,16 +60,18 @@ export const TodoList: React.FC<TodoListProps> = (props) => {
                                 onChange={props.onToggle.bind(null,value.id)}
                             />
                         </ListItemIcon>
-                        <ListItemText id={labelId} primary={value.title}/>
+                        <ListItemText   className={addClassName} id={labelId} primary={value.title}/>
                         <ListItemSecondaryAction>
-                            <IconButton edge="end" aria-label="comments">
+                            {/*<IconButton edge="end" aria-label="comments">*/}
                                 <DeleteIcon onClick={()=>props.onRemove(value.id)}/>
-                            </IconButton>
+                            {/*</IconButton>*/}
                         </ListItemSecondaryAction>
                     </ListItem>
+
                 );
 
             })}
+
         </List>
     );
 }

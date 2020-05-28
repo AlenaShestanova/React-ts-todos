@@ -1,6 +1,30 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="903894e7-3fad-4dd2-9b8c-a60ad82a9100" name="Default Changelist" comment="создала шапку и форму">
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Components/Header.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Components/TodoForm.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/AboutPage.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/TodoPage.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/TodoList.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/TodoList.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.css" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="ProjectId" id="1cSEFNKDQJExO0eq8u9aivnJKIU" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
@@ -9,8 +33,125 @@
   </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../todos_proj" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="nodejs_interpreter_path" value="node" />
+    <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="vcs.Git" />
+    <property name="ts.external.directory.path" value="D:\js курс\react_typescript\node_modules\typescript\lib" />
+  </component>
+  <component name="RunManager" selected="npm.npm start">
+    <configuration name="Debug Application" type="JavascriptDebugType" uri="http://localhost:3000">
+      <method v="2" />
+    </configuration>
+    <configuration name="npm start" type="js.build_tools.npm">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="start" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="903894e7-3fad-4dd2-9b8c-a60ad82a9100" name="Default Changelist" comment="" />
+      <created>1590513489346</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1590513489346</updated>
+      <workItem from="1590513493423" duration="2249000" />
+      <workItem from="1590589635059" duration="28594000" />
+    </task>
+    <task id="LOCAL-00001" summary="создала шапку и форму">
+      <created>1590595699921</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1590595699922</updated>
+    </task>
+    <task id="LOCAL-00002" summary="обработка ввода при нажатии на enter">
+      <created>1590597878853</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1590597878853</updated>
+    </task>
+    <task id="LOCAL-00003" summary="добавление туду">
+      <created>1590613860241</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1590613860241</updated>
+    </task>
+    <task id="LOCAL-00004" summary="выделение и удаление выполненных туду">
+      <created>1590616872025</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1590616872025</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="создала шапку и форму" />
+    <MESSAGE value="обработка ввода при нажатии на enter" />
+    <MESSAGE value="добавление туду" />
+    <MESSAGE value="выделение и удаление выполненных туду" />
+    <option name="LAST_COMMIT_MESSAGE" value="выделение и удаление выполненных туду" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="438" y="32" key="CommitChangelistDialog2" timestamp="1590616864264">
+      <screen x="0" y="0" width="1600" height="870" />
+    </state>
+    <state x="438" y="32" key="CommitChangelistDialog2/0.0.1600.870@0.0.1600.870" timestamp="1590616864264" />
+    <state x="580" y="192" key="FileChooserDialogImpl" timestamp="1590661762244">
+      <screen x="0" y="0" width="1600" height="870" />
+    </state>
+    <state x="580" y="192" key="FileChooserDialogImpl/0.0.1600.870@0.0.1600.870" timestamp="1590661762244" />
+    <state width="1578" height="212" key="GridCell.Tab.0.bottom" timestamp="1590595663039">
+      <screen x="0" y="0" width="1600" height="870" />
+    </state>
+    <state width="1578" height="212" key="GridCell.Tab.0.bottom/0.0.1600.870@0.0.1600.870" timestamp="1590595663039" />
+    <state width="1578" height="212" key="GridCell.Tab.0.center" timestamp="1590595663038">
+      <screen x="0" y="0" width="1600" height="870" />
+    </state>
+    <state width="1578" height="212" key="GridCell.Tab.0.center/0.0.1600.870@0.0.1600.870" timestamp="1590595663038" />
+    <state width="1578" height="212" key="GridCell.Tab.0.left" timestamp="1590595663037">
+      <screen x="0" y="0" width="1600" height="870" />
+    </state>
+    <state width="1578" height="212" key="GridCell.Tab.0.left/0.0.1600.870@0.0.1600.870" timestamp="1590595663037" />
+    <state width="1578" height="212" key="GridCell.Tab.0.right" timestamp="1590595663039">
+      <screen x="0" y="0" width="1600" height="870" />
+    </state>
+    <state width="1578" height="212" key="GridCell.Tab.0.right/0.0.1600.870@0.0.1600.870" timestamp="1590595663039" />
+    <state x="463" y="182" width="672" height="678" key="search.everywhere.popup" timestamp="1590597797992">
+      <screen x="0" y="0" width="1600" height="870" />
+    </state>
+    <state x="463" y="182" width="672" height="678" key="search.everywhere.popup/0.0.1600.870@0.0.1600.870" timestamp="1590597797992" />
   </component>
 </project>

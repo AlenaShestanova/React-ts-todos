@@ -1,39 +1,25 @@
-import React,{useState} from 'react';
+import React, {useState, useEffect} from 'react';
 import CenteredTabs from "./Components/Header";
-import {TodoForm} from "./Components/TodoForm";
-import {TodoList} from "./Components/TodoList";
-import {ITodo} from './intefaces'
+import {BrowserRouter, Switch, Route} from 'react-router-dom'
+import {TodoPage} from "./pages/TodoPage";
+import {AboutPage} from "./pages/AboutPage";
 
- const App:React.FunctionComponent=()=> {
-     const[todos,setTodos]=React.useState<ITodo[]>([])
-     const addHandler=(title:string)=>{
-         const newTodo:ITodo={
-             title:title,
-             id:Date.now(),
-             completed:false
-         }
-         setTodos(prev=>[newTodo,...todos])
-     }
-     const toggleHandler=(id:number)=>{
-         setTodos(prev=>prev.map(todo=>{
-             if(todo.id===id){
-                 todo.completed=!todo.completed
-             }
-             return todo
-         }))
-     }
-     const removeHandler=(id:number)=>{
-         setTodos(prev=>prev.filter(todo=>todo.id!==id))
-     }
-  return (
-      <>
-<CenteredTabs/>
-<div className="container">
-<TodoForm onAdd={addHandler}></TodoForm>
-    <TodoList  todos={todos} onToggle={toggleHandler} onRemove={removeHandler}></TodoList>
-</div>
-      </>
-  );
+const App: React.FunctionComponent = () => {
+
+    return (
+        <>
+            <BrowserRouter>
+                <CenteredTabs/>
+                <div className="container">
+                    <Switch>
+                        <Route component={TodoPage} path='/' exact></Route>
+                        <Route component={AboutPage} path='/about'></Route>
+
+                    </Switch>
+                </div>
+            </BrowserRouter>
+        </>
+    );
 }
 
 export default App;

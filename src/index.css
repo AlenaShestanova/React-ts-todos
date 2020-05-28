@@ -30,3 +30,6 @@ code {
 .line{
   text-decoration: line-through;
 }
+.pCenter{
+  text-align: center;
+}
