@@ -12,12 +12,12 @@ export const TodoPage=()=>{
         localStorage.setItem('todos',JSON.stringify(todos))
     },[todos])
     const addHandler=(title:string)=>{
-        const newTodo:ITodo={
+        const newTodo:Todo={
             title:title,
             id:Date.now(),
             completed:false
         }
-        setTodos(prev=>[newTodo,...todos])
+        setTodos([newTodo,...todos])
     }
     const toggleHandler=(id:number)=>{
         setTodos(prev=>prev.map(todo=>{
