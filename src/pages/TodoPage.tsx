@@ -1,11 +1,11 @@
 import React, {useEffect} from 'react'
 import {TodoForm} from "../Components/TodoForm";
 import {TodoList} from "../Components/TodoList";
-import {ITodo} from "../intefaces";
+import {Todo} from "../intefaces";
 export const TodoPage=()=>{
-    const[todos,setTodos]=React.useState<ITodo[]>([])
+    const[todos,setTodos]=React.useState<Todo[]>([])
     useEffect(()=>{
-        const saved=JSON.parse(localStorage.getItem('todos')||'[]') as ITodo[]
+        const saved=JSON.parse(localStorage.getItem('todos')||'[]') as Todo[]
         setTodos(saved)
     },[])
     useEffect(()=>{
